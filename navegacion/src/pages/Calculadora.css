@@ -1,0 +1,70 @@
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calculadora h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.calculadora input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #cecdcd;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para los botones en una fila */
+.calculadora .botones {
+    display: flex;
+    flex-wrap: wrap; /* Para que los botones se ajusten en múltiples líneas si es necesario */
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.calculadora button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+    width: calc(25% - 10px); /* Para que cada botón ocupe un 25% del espacio */
+}
+
+.calculadora button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el botón de limpiar */
+.calculadora .limpiar {
+    width: 100%; /* Hace que el botón de limpiar ocupe toda la fila */
+    background-color: #dc3545;
+}
+
+.calculadora p {
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
